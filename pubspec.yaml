@@ -1,0 +1,31 @@
+name: reproductor_musica
+description: "Sencillo reroductor de música en donde puedes cargar canciones desde el almacenamiento del dispositivo, reproducirlas, pausarlas, detenerlas y navegar entre ellas."
+publish_to: 'none'
+version: 1.0.3
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.36         # Motor de audio
+  audio_session: ^0.1.13      # Configura la sesión de audio
+  file_picker: ^5.5.0         # Para cargar canciones desde almacenamiento si quieres
+  provider: ^6.1.2            # Para el estado
+  permission_handler: ^11.0.1
+  on_audio_query: ^2.9.0
+  device_info_plus: ^9.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  image_path: "assets/musica.png"
